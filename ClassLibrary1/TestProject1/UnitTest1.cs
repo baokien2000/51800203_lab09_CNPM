@@ -94,6 +94,18 @@ namespace TestProject1
 
         }
 
+        
 
+        [TestMethod]
+        public void getStudentAt()
+        {
+            StudentService.StudentService service = new StudentService.StudentService();
+            StudentService.Student S1 = new Student() { Id = 1, Name = "Student", Age = 18, Score = 10 };
+            bool status = service.addStudent(S1);
+            int length = service.size();
+            Assert.IsTrue(status);
+            Assert.AreEqual(1, length);
+
+        }
     }
 }
