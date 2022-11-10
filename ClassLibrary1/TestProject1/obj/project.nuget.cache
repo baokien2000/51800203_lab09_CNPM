@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LXSFe6EdEkqPc0HDN47SjCyaJtuIbbwH4yV9pj1PZk+RNEAvwZ3Z+gZIlaWFO5s1VucHFpb+NCAlS2xSBWpeuQ==",
+  "dgSpecHash": "uZV6T9C/Pn/xkM4Vgu2mQMLcnv8r2wE3sDOlmxsXqeStxXr4Wmx9lwMz5ql+6HxeQwY2niTu6zVnv9JTrRrD5Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\admin\\Downloads\\java-code\\ClassLibrary1\\TestProject1\\TestProject1.csproj",
+  "projectFilePath": "C:\\Users\\admin\\Downloads\\51800203_lab09_CNPM\\ClassLibrary1\\TestProject1\\TestProject1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.codecoverage\\17.1.0\\microsoft.codecoverage.17.1.0.nupkg.sha512",

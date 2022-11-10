@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\admin\\Downloads\\java-code\\ClassLibrary1\\ClassLibrary1\\ClassLibrary1.csproj",
+      "projectUniqueName": "C:\\Users\\admin\\Downloads\\51800203_lab09_CNPM\\ClassLibrary1\\ClassLibrary1\\ClassLibrary1.csproj",
       "projectName": "ClassLibrary1",
-      "projectPath": "C:\\Users\\admin\\Downloads\\java-code\\ClassLibrary1\\ClassLibrary1\\ClassLibrary1.csproj",
+      "projectPath": "C:\\Users\\admin\\Downloads\\51800203_lab09_CNPM\\ClassLibrary1\\ClassLibrary1\\ClassLibrary1.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\admin\\Downloads\\java-code\\ClassLibrary1\\ClassLibrary1\\obj\\",
+      "outputPath": "C:\\Users\\admin\\Downloads\\51800203_lab09_CNPM\\ClassLibrary1\\ClassLibrary1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
