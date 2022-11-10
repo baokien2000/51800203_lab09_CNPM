@@ -97,15 +97,41 @@ namespace TestProject1
         
 
         [TestMethod]
-        public void getStudentAt()
+        public void getStudentAt_mustIN_1_to_n_1()
         {
             StudentService.StudentService service = new StudentService.StudentService();
             StudentService.Student S1 = new Student() { Id = 1, Name = "Student", Age = 18, Score = 10 };
-            bool status = service.addStudent(S1);
-            int length = service.size();
-            Assert.IsTrue(status);
-            Assert.AreEqual(1, length);
+            service.addStudent(S1);
+            bool excep = false;
+            try
+            {
+                service.getStudentAt(0);
+            }
+            catch (NullReferenceException e)
+            {
+                excep = true;
+            }
+            Assert.IsTrue(excep);
+        }
+        [TestMethod]
+                         
 
+        public void getStudentAt_mustIN_return_right_message()
+        {
+            StudentService.StudentService service = new StudentService.StudentService();
+            StudentService.Student S1 = new Student() { Id = 1, Name = "Student", Age = 18, Score = 10 };
+            service.addStudent(S1);
+            String mess = "Index  is not available in this array";
+            String excep = "123";
+            try
+            {
+                service.getStudentAt(0);
+            }
+            catch (NullReferenceException e)
+            {
+                excep = "Index " + service.getStudentAt(0) + "is not available in this array";
+            }
+            Assert.IsTrue(excep, mess);
         }
     }
 }
