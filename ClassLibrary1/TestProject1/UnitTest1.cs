@@ -41,7 +41,17 @@ namespace TestProject1
             Assert.AreEqual(Test, 'E');
         }
 
+        [TestMethod]
+        public void Student_Add_false_must_return_False()
+        {
+            StudentService.StudentService service = new StudentService.StudentService();
+            StudentService.Student S1 = new Student() { Id = 1, Name = "Student", Age = 18, Score = 10 };
+            StudentService.Student S2 = new Student() { Id = 1, Name = "Student", Age = 18, Score = 10 };
+            service.addStudent(S1);
+            bool test = service.addStudent(S2);
 
+            Assert.IsFalse(test);
+        }
         [TestMethod]
         public void Student_mustAdd_when_didnot_exist()
         {
