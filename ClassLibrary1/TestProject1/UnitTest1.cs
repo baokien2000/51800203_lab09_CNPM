@@ -60,7 +60,30 @@ namespace TestProject1
         public void passingNullParemeter()
         {
             StudentService.StudentService service = new StudentService.StudentService();
-            service.addStudent(null);
+            bool excep = false;
+            try
+            {
+                service.addStudent(null);
+            }
+            catch(NullReferenceException e)
+            {
+                excep = true;
+            }
+            Assert.IsTrue(excep);
         }
+
+        [TestMethod]
+        public void Add_success()
+        {
+            StudentService.StudentService service = new StudentService.StudentService();
+            StudentService.Student S1 = new Student() { Id = 1, Name = "Student", Age = 18, Score = 10 };
+            bool status = service.addStudent(S1);
+            int length = service.size();
+            Assert.IsTrue(status);
+            Assert.AreEqual(1,length);
+
+        }
+
+
     }
 }
