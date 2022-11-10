@@ -121,17 +121,28 @@ namespace TestProject1
             StudentService.StudentService service = new StudentService.StudentService();
             StudentService.Student S1 = new Student() { Id = 1, Name = "Student", Age = 18, Score = 10 };
             service.addStudent(S1);
-            String mess = "Index  is not available in this array";
-            String excep = "123";
+            String mess = "Index 0 is not available in this array";
             try
             {
                 service.getStudentAt(0);
             }
             catch (NullReferenceException e)
             {
-                excep = "Index " + service.getStudentAt(0) + "is not available in this array";
+                SystemException excep = e;
+                Assert.AreEqual(excep, mess);
+
             }
-            Assert.IsTrue(excep, mess);
+        }
+
+
+        public void getStudentAt_return_right_student()
+        {
+            StudentService.StudentService service = new StudentService.StudentService();
+            StudentService.Student S1 = new Student() { Id = 1, Name = "Student", Age = 18, Score = 10 };
+            service.addStudent(S1);
+            Student a = service.getStudentAt(0);
+            Assert.AreEqual(S1, a);
+  
         }
     }
 }
